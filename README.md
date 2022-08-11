@@ -1,5 +1,6 @@
-# React Template
-> This repo contains React Template, <br> it contains all the basic configuration for react app including linters.
+# Bookstore
+> A simple website to store your favorite books by category.<br> 
+> This is a Microverse project Created with React.js.
 
 
 ## Built With
@@ -20,7 +21,7 @@ To get a local copy up and running follow these simple example steps.
   
 ### Setup
 
-    git clone https://github.com/shahira-sadat/react-template
+    git clone https://github.com/shahira-sadat/Bookstore
 
 ### Install
     npm install
