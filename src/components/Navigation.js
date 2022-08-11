@@ -6,7 +6,7 @@ function Navigation() {
     <header>
       <div className="container flex">
         <h1>
-          <Link to="/" className="logo">Bookstore CMS</Link>
+          <Link to="/" className="logo">Bookstore</Link>
         </h1>
         <nav>
           <ul className="flex">

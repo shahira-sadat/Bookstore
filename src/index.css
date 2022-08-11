@@ -25,7 +25,7 @@ a {
 
 .flex {
   display: flex;
-  justify-content: start;
+  justify-content: flex-start;
   align-items: center;
   min-height: 60px;
 }

@@ -5,20 +5,20 @@ import AddBook from './AddBook';
 const books = [
   {
     id: 1,
-    category: 'Action',
-    name: 'The hunger games',
+    category: 'Romance',
+    name: 'Purple Love',
     author: 'Suzane Collins',
   },
   {
     id: 2,
     category: 'Science Fiction',
-    name: 'Dune',
+    name: 'Shelock Holmes',
     author: 'Frank Herbert',
   },
   {
     id: 3,
-    category: 'Economy',
-    name: 'Capital in the Twenty-First Century',
+    category: 'Drama',
+    name: 'Ava',
     author: 'Suzzane Collins',
   },
 ];
