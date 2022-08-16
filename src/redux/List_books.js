@@ -1,27 +1,21 @@
-import { v4 } from 'uuid';
+const generateID = () => Math.floor((Math.random() * 100) + 1);
 
-const arrBooks = {
+export default {
   books: [
     {
-      id: v4(),
-      title: 'Harry Potter and the Chamber of Secrets',
-      author: 'J.K. Rowling',
-      genre: 'Novel',
+      id: generateID(),
+      title: 'Alchemist',
+      category: 'Action',
     },
     {
-      id: v4(),
-      title: 'The Hobbit',
-      author: 'Tolkien',
-      genre: 'fantasy',
+      id: generateID(),
+      title: 'Ava',
+      category: 'History',
     },
     {
-      id: v4(),
-      title: 'The Jazz Piano Book',
-      author: 'Mark Levine',
-      genre: 'Education',
+      id: generateID(),
+      title: 'Math',
+      category: 'Learning',
     },
   ],
-  categories: [],
 };
-
-export default arrBooks;
