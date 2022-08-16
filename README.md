@@ -10,9 +10,15 @@ Can check the live demo [here](https://bookstore-shahir.herokuapp.com/)
 
 ## Built With
 
-- JavaScript
-- React
-- CSS
+- HTML/CSS
+- ReactJs
+- Redux
+- Heroku Buildpack
+- npm
+- ES6
+- Node.js
+- Linters
+- VS Code
   
 ## Getting Started
 
