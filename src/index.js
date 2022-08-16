@@ -1,17 +1,17 @@
 import React from 'react';
+import { Provider } from 'react-redux';
+import { createStore } from 'redux';
 import ReactDOM from 'react-dom';
-import './index.css';
-import { BrowserRouter } from 'react-router-dom';
 import App from './components/App';
-import reportWebVitals from './reportWebVitals';
+import sampleBookObj from './sampleBookObject';
+import books from './reducers/index';
+import './index.css';
+
+const store = createStore(books, sampleBookObj);
 
 ReactDOM.render(
-  <React.StrictMode>
-    <BrowserRouter>
-      <App />
-    </BrowserRouter>
-  </React.StrictMode>,
+  <Provider store={store}>
+    <App />
+  </Provider>,
   document.getElementById('root'),
 );
-
-reportWebVitals();

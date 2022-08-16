@@ -1,20 +1,12 @@
-import './App.css';
-import { Routes, Route } from 'react-router-dom';
-import BooksContainer from './BooksContainer';
-import CategoriesContainer from './CategoriesContainer';
-import Navigation from './Navigation';
+import React from 'react';
+import BooksForm from '../containers/BooksForm';
+import BooksList from '../containers/BooksList';
 
-function App() {
-  return (
-    <div className="App">
-      <Navigation />
-      <Routes>
-        <Route path="/" element={<BooksContainer />} />
-        <Route path="categories" element={<CategoriesContainer />} />
-      </Routes>
-    </div>
-
-  );
-}
+const App = () => (
+  <div>
+    <BooksList />
+    <BooksForm />
+  </div>
+);
 
 export default App;
