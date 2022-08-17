@@ -4,9 +4,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  
 }
-
 
 body {
   display: flex;
@@ -16,7 +14,6 @@ body {
   height: 100vh;
   width: 100vw;
   background-color: #f5f6fa;
-
 }
 
 .header {
@@ -26,7 +23,7 @@ body {
   align-items: center;
   justify-content: space-between;
   background-color: white;
-  margin: 2em 2em -1em 2em; 
+  margin: 2em 2em -1em 2em;
   padding: 1.3em 2em  1.3em 2em;
 }
 
@@ -98,10 +95,10 @@ body {
   margin-bottom: 1rem;
 }
 
-.book h3{
- margin-top: 0.188rem;
-    font-size: 1.375rem;
-    letter-spacing: -.2px;
+.book h3 {
+  margin-top: 0.188rem;
+  font-size: 1.375rem;
+  letter-spacing: -0.2px;
 }
 
 .book-genre {
@@ -110,17 +107,15 @@ body {
 }
 
 .book-author {
-      font-size: .875rem;
-    font-weight: 300;
-    color: #4386bf;
-
+  font-size: 0.875rem;
+  font-weight: 300;
+  color: #4386bf;
 }
 
 .book-btns {
-
-      display: flex;
-    align-items: center;
-    margin-top: 1.2rem;
+  display: flex;
+  align-items: center;
+  margin-top: 1.2rem;
 }
 
 .comment-book {
@@ -164,15 +159,13 @@ body {
   height: 2rem;
   width: 12rem;
   background-color: #0290ff;
-  color: white;
   border: none;
   font-size: medium;
   font-weight: lighter;
   border-radius: 5px;
-      cursor: pointer;
-    border-radius: 3px;
-    font-family: "Roboto Slab",serif;
-    color: #fff;
+  cursor: pointer;
+  font-family: "Roboto Slab", serif;
+  color: #fff;
 }
 
 .book-porcentage-number {
@@ -200,7 +193,6 @@ body {
 .form-container {
   margin: 2rem;
   width: 90vw;
-
 }
 
 .form {
@@ -215,8 +207,7 @@ body {
 .form-title {
   color: slategray;
   font-weight: bold;
-  padding-bottom: 1rem; 
-  
+  padding-bottom: 1rem;
 }
 
 .new-book {
@@ -225,7 +216,6 @@ body {
   padding: 1rem;
   border: none;
   border-radius: 5px;
-  
 }
 
 .new-author {
@@ -251,7 +241,6 @@ body {
   font-size: medium;
   font-weight: bold;
   border-radius: 5px;
-  
 }
 
 .category-container {
