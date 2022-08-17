@@ -156,7 +156,7 @@ body {
 .update-book {
   height: 2rem;
   width: 12rem;
-  background-color: #0290ff;
+  background-color: #1698fc;
   border: none;
   font-size: medium;
   font-weight: lighter;
@@ -201,7 +201,7 @@ body {
 }
 
 .form-title {
-  color: slategray;
+  color: rgb(112, 128, 144);
   font-weight: bold;
   padding-bottom: 1rem;
 }
