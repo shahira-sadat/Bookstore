@@ -168,11 +168,13 @@ body {
 
 .book-porcentage-number {
   font-size: xx-large;
+  color: #0290ff;
 }
 
 .book-porcentage {
   font-size: 1rem;
   align-items: center;
+  color: black;
 }
 
 .book-character {
