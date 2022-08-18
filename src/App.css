@@ -1,33 +1,127 @@
-  *{
+* {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
   list-style: none;
   text-decoration: none;
 }
+
 *:visited {
   color: #5b5b5b;
 }
+
 body {
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  color: #444;
-  background: #eee;
+  font-family: sans-serif;
+  background: rgba(158, 90, 90, 0.527);
   height: 100vh;
 }
+
 #root {
   height: 100%;
-  width: 100%;
+  width: 100vw;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
+.nav{
+  height:6vh;
+  display: flex;
+  align-items: center;
+  margin-bottom: 4em; 
+}
+
+.header{
+position: relative;
+top: -18em;
+left: 7em;
+width: 100vw;
+
+}
+
+.subheader{
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.header-title{
+  color: rgba(59, 17, 17, 0.753);
+  margin-right: 2em; 
+
+}
+
+
+.nav-li {
+  font-size: 22px;
+}
+
+.nav-ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 3em;
+
+}
+
+
 .app-container {
-  padding: 1em;
-  max-width: 900px;
-  width: 80%;
-  background-color: white;
+  padding: 3em;
+  width: 100vw;
+height: 50vh;
+  color: rgb(63, 73, 72);
+  background-color: lightcoral;
   border: 2px solid white;
-  border-radius: 1em;
-  box-shadow: 1px 1px 9px #bcbcbc;
+  box-shadow: 1px 1px 9px #c02a2a;
+  margin: 10em 12em 10em 0;
+  overflow-y: scroll;
+}
+
+.categories-container{
+  width: 100vw;
+}
+.book-wrapper {
+  padding: 1.5em;
+  margin: 1em 0;
+  display: flex;
+  align-items: center;
+  height: 60px;
+  background-color: #ebb8b8;
+  width: 40vw;
+}
+
+.title,
+.author {
+  font-size: 16px;
+  font-weight: 400;
+  flex: 3;
+}
+
+.title {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.del-button{
+  background: #e49090;
+  flex: 1;
+  color: rgb(51, 48, 48);
+  padding: 0.5em;
+  border: 1px solid transparent;
+  box-shadow: 1px 1px 9px #f5f0f0;
+}
+
+
+.form-container{
+  padding-right: 1em;
+  margin-top: 3em;
+}
+
+.form-container input, button{
+  background: #ebb8b8;
+  flex: 1;
+  padding: 0.8em;
+  border: none;
+  margin: 0.6em;
+
 }
