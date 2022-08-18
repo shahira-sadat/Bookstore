@@ -2,16 +2,16 @@ import { nanoid } from '@reduxjs/toolkit';
 
 const defaultState = [
   {
-  title: 'Harry Potter',
+    title: 'Harry Potter',
     author: 'Paulo Nerd',
     id: nanoid(),
   },
-   {
-   
-     title: 'The Hunger Games',
+  {
+
+    title: 'The Hunger Games',
     author: 'Suzanne Collins',
     id: nanoid(),
-  }
+  },
 ];
 
 const ADD = 'booktore/books/ADD';
