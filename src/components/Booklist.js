@@ -1,12 +1,11 @@
 import React, { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import BookItem from './BookItem';
-import { getBooksToDisplayApi } from '../redux/books/book';
-
+import { getBooksToDisplayApi } from '../redux/books/books';
 
 export default function BookList() {
   const booklist = useSelector((state) => state.books);
-   const dispatch = useDispatch();
+  const dispatch = useDispatch();
 
   useEffect(() => {
     dispatch(getBooksToDisplayApi(booklist));

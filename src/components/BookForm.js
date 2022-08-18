@@ -1,13 +1,13 @@
 import { useState, React } from 'react';
 import { useDispatch } from 'react-redux';
 import { nanoid } from '@reduxjs/toolkit';
-import { addNewBookApi } from '../redux/books/book';
+import { addNewBookApi } from '../redux/books/books';
 
 function Form() {
   const [titleInput, setTitleInput] = useState('');
   const [authorInput, setAuthorInput] = useState('');
   const dispatch = useDispatch();
-    const id = nanoid();
+  const id = nanoid();
   const category = 'Fiction';
 
   return (
@@ -31,10 +31,10 @@ function Form() {
         <button
           onClick={(e) => {
             e.preventDefault();
-               if (titleInput === '' || authorInput === '') {
+            if (titleInput === '' || authorInput === '') {
               return;
             }
-             dispatch(
+            dispatch(
               addNewBookApi({
                 title: titleInput,
                 author: authorInput,
