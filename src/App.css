@@ -1,261 +1,122 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;800&family=Roboto+Slab:wght@100;200&display=swap');
-
 * {
-  padding: 0;
-  margin: 0;
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+}
+
+*:visited {
+  color: #5b5b5b;
 }
 
 body {
-  display: flex;
-  place-content: center;
-  font-family: 'Montserrat', sans-serif;
-  font-size: 2rem;
+  font-family: sans-serif;
+  background: rgba(158, 90, 90, 0.527);
   height: 100vh;
+}
+
+#root {
+  height: 100%;
   width: 100vw;
-  background-color: #f5f6fa;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav {
+  height: 6vh;
+  display: flex;
+  align-items: center;
+  margin-bottom: 4em;
 }
 
 .header {
-  width: 90vw;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-  background-color: white;
-  margin: 2em 2em -1em 2em;
-  padding: 1.3em 2em  1.3em 2em;
-}
-
-.header-title {
-  font-size: 1.9rem;
-  font-weight: bold;
-  color: #0290ff;
-  margin: 0;
-  padding: 0;
+  position: relative;
+  top: -18em;
+  left: 7em;
+  width: 100vw;
 }
 
 .subheader {
   display: flex;
+  justify-content: center;
   flex-direction: row;
-  align-items: center;
-  gap: 2rem;
+}
+
+.header-title {
+  color: rgba(59, 17, 17, 0.753);
+  margin-right: 2em;
+}
+
+.nav-li {
+  font-size: 22px;
 }
 
 .nav-ul {
   display: flex;
   flex-direction: row;
-  align-items: center;
   justify-content: space-between;
-  gap: 2rem;
+  gap: 3em;
 }
 
-.nav-li {
+.app-container {
+  padding: 3em;
+  width: 100vw;
+  height: 50vh;
+  color: rgb(63, 73, 72);
+  background-color: lightcoral;
+  border: 2px solid white;
+  box-shadow: 1px 1px 9px #c02a2a;
+  margin: 10em 12em 10em 0;
+  overflow-y: scroll;
+}
+
+.categories-container {
+  width: 100vw;
+}
+
+.book-wrapper {
+  padding: 1.5em;
+  margin: 1em 0;
   display: flex;
   align-items: center;
+  height: 60px;
+  background-color: #ebb8b8;
+  width: 40vw;
 }
 
-.nav-link {
-  font-size: 1rem;
-  font-weight: lighter;
-  color: black;
-  margin: 0;
-  padding: 0;
-  text-decoration: none;
+.title,
+.author {
+  font-size: 16px;
+  font-weight: 400;
+  flex: 3;
 }
 
-.logo {
-  height: 2rem;
-  border: 1px solid rgb(87, 87, 87);
-  border-radius: 50%;
+.title {
+  font-size: 20px;
+  font-weight: 600;
 }
 
-.home-container {
-  display: flex;
-  flex-direction: column;
-  padding-left: 2rem;
-  padding-right: 2rem;
-  margin-top: 1rem;
-}
-
-.book {
-  margin-top: 1rem;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-  width: 100%;
-  height: max-content;
-  background-color: white;
-  gap: 2rem;
-  padding: 3rem;
-  border-radius: 0.5rem;
-  margin-bottom: 1rem;
-}
-
-.book h3 {
-  margin-top: 0.188rem;
-  font-size: 1.375rem;
-  letter-spacing: -0.2px;
-}
-
-.book-genre {
-  font-size: 1rem;
-  color: rgb(150, 165, 180);
-}
-
-.book-author {
-  font-size: 0.875rem;
-  font-weight: 300;
-  color: #4386bf;
-}
-
-.book-btns {
-  display: flex;
-  align-items: center;
-  margin-top: 1.2rem;
-}
-
-.comment-book {
-  width: 5.5rem;
-  background-color: transparent;
-  border: none;
-  height: 2rem;
-  text-align: start;
-  color: #4386bf;
-  font-size: 0.9rem;
-  font-family: 'Roboto Slab', serif;
-  border-right: 1px solid rgb(180, 180, 180);
-}
-
-.delete-book {
-  width: 4rem;
-  background-color: transparent;
-  border: none;
-  height: 2rem;
-  text-align: center;
-  color: #4386bf;
-  font-size: 0.9rem;
-  font-family: 'Roboto Slab', serif;
-  border-right: 1px solid rgb(180, 180, 180);
-  padding-right: 0.3rem;
-}
-
-.edit-book {
-  width: 4rem;
-  background-color: transparent;
-  border: none;
-  height: 2rem;
-  text-align: start;
-  color: #4386bf;
-  font-size: 0.9rem;
-  font-family: 'Roboto Slab', serif;
-  padding-left: 0.2rem;
-}
-
-.update-book {
-  height: 2rem;
-  width: 12rem;
-  background-color: #1698fc;
-  border: none;
-  font-size: medium;
-  font-weight: lighter;
-  border-radius: 5px;
-  cursor: pointer;
-  font-family: "Roboto Slab", serif;
-  color: #fff;
-}
-
-.book-porcentage-number {
-  font-size: xx-large;
-}
-
-.book-porcentage {
-  font-size: 1rem;
-  align-items: center;
-}
-
-.book-character {
-  font-size: 1rem;
-  color: slategray;
-}
-
-.book-character-number {
-  font-size: 1rem;
-  margin-top: 0.5rem;
-  margin-bottom: 0.3rem;
+.del-button {
+  background: #e49090;
+  flex: 1;
+  color: rgb(51, 48, 48);
+  padding: 0.5em;
+  border: 1px solid transparent;
+  box-shadow: 1px 1px 9px #f5f0f0;
 }
 
 .form-container {
-  margin: 2rem;
-  width: 90vw;
+  padding-right: 1em;
+  margin-top: 3em;
 }
 
-.form {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-  width: 100%;
-  gap: 1rem;
-}
-
-.form-title {
-  color: rgb(112, 128, 144);
-  font-weight: bold;
-  padding-bottom: 1rem;
-}
-
-.new-book {
-  width: 100%;
-  height: 3rem;
-  padding: 1rem;
+.form-container input,
+button {
+  background: #ebb8b8;
+  flex: 1;
+  padding: 0.8em;
   border: none;
-  border-radius: 5px;
-}
-
-.new-author {
-  width: 100%;
-  height: 3rem;
-  padding: 1rem;
-  border: none;
-  border-radius: 5px;
-}
-
-#alert {
-  font-size: 1rem;
-  color: red;
-  font-weight: bold;
-}
-
-.add-book {
-  width: 20rem;
-  height: 3rem;
-  background-color: #0290ff;
-  color: white;
-  border: none;
-  font-size: medium;
-  font-weight: bold;
-  border-radius: 5px;
-}
-
-.category-container {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-top: 10rem;
-}
-
-.category-btn {
-  width: 20rem;
-  height: 3rem;
-  background-color: #0290ff;
-  color: white;
-  border: none;
-  font-size: medium;
-  font-weight: bold;
-  border-radius: 5px;
-  margin-bottom: 2rem;
+  margin: 0.6em;
 }

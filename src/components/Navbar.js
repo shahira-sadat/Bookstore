@@ -1,5 +1,4 @@
 import { Link } from 'react-router-dom';
-import logo from '../user.png';
 
 function NavBar() {
   return (
@@ -17,7 +16,6 @@ function NavBar() {
           </ul>
         </nav>
       </div>
-      <img src={logo} alt="logo" className="logo" />
     </div>
   );
 }

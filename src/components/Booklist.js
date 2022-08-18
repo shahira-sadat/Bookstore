@@ -1,18 +1,23 @@
 import React from 'react';
 import { useSelector } from 'react-redux';
-import Book from './Book';
+import BookItem from './BookItem';
 
-function BookList() {
-  const books = useSelector((state) => state.books);
+export default function BookList() {
+  const booklist = useSelector((state) => state.books);
+
   return (
-    <>
-      <div className="home-container">
-        {books.map((book) => (
-          <Book key={book.id} title={book.title} author={book.author} genre={book.genre} />
+    <div className="list-container">
+      <h3>Book List</h3>
+      <ul>
+        {booklist.map((book) => (
+          <BookItem
+            key={book.id}
+            title={book.title}
+            author={book.author}
+            id={book.id}
+          />
         ))}
-      </div>
-    </>
+      </ul>
+    </div>
   );
 }
-
-export default BookList;
