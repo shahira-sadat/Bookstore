@@ -1,42 +1,42 @@
-const ADD = 'bookstore/books/ADD';
-const REMOVE = 'bookstore/books/REMOVE';
-const UPDATE = 'bookstore/books/UPDATE';
+import { nanoid } from '@reduxjs/toolkit';
 
-const addBook = (book) => ({
-  type: ADD,
-  book,
-});
+const defaultState = [
+  {
+    title: 'The Hunger Games',
+    author: 'Suzanne Collins',
+    id: nanoid(),
+  },
+  {
+    title: 'Dune',
+    author: 'Frank Herbert',
+    id: nanoid(),
+  },
+];
 
-const removeBook = (book) => ({
-  type: REMOVE,
-  book,
-});
+const ADD = 'booktore/books/ADD';
+const REMOVE = 'boostore/books/REMOVE';
 
-const updateBook = (book) => ({
-  type: UPDATE,
-  book,
-});
-
-const bookReducer = (state = [], action = {}) => {
+export default function booksReducer(state = defaultState, action = {}) {
   switch (action.type) {
     case ADD:
-      return [
-        ...state,
-        action.book,
-      ];
+      return state.concat(action.book);
     case REMOVE:
       return state.filter((book) => book.id !== action.book.id);
-    case UPDATE:
-      return state.map((book) => {
-        if (book.id === action.book.id) {
-          return action.book;
-        }
-        return book;
-      });
     default:
       return state;
   }
-};
+}
 
-export { addBook, updateBook, removeBook };
-export default bookReducer;
+export function createBook(book) {
+  return {
+    type: ADD,
+    book,
+  };
+}
+
+export function removeBook(book) {
+  return {
+    type: REMOVE,
+    book,
+  };
+}
