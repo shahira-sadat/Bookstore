@@ -24,33 +24,30 @@ body {
   align-items: center;
 }
 
-.nav{
-  height:6vh;
+.nav {
+  height: 6vh;
   display: flex;
   align-items: center;
-  margin-bottom: 4em; 
+  margin-bottom: 4em;
 }
 
-.header{
-position: relative;
-top: -18em;
-left: 7em;
-width: 100vw;
-
+.header {
+  position: relative;
+  top: -18em;
+  left: 7em;
+  width: 100vw;
 }
 
-.subheader{
+.subheader {
   display: flex;
   justify-content: center;
   flex-direction: row;
 }
 
-.header-title{
+.header-title {
   color: rgba(59, 17, 17, 0.753);
-  margin-right: 2em; 
-
+  margin-right: 2em;
 }
-
 
 .nav-li {
   font-size: 22px;
@@ -61,14 +58,12 @@ width: 100vw;
   flex-direction: row;
   justify-content: space-between;
   gap: 3em;
-
 }
-
 
 .app-container {
   padding: 3em;
   width: 100vw;
-height: 50vh;
+  height: 50vh;
   color: rgb(63, 73, 72);
   background-color: lightcoral;
   border: 2px solid white;
@@ -77,9 +72,10 @@ height: 50vh;
   overflow-y: scroll;
 }
 
-.categories-container{
+.categories-container {
   width: 100vw;
 }
+
 .book-wrapper {
   padding: 1.5em;
   margin: 1em 0;
@@ -102,7 +98,7 @@ height: 50vh;
   font-weight: 600;
 }
 
-.del-button{
+.del-button {
   background: #e49090;
   flex: 1;
   color: rgb(51, 48, 48);
@@ -111,17 +107,16 @@ height: 50vh;
   box-shadow: 1px 1px 9px #f5f0f0;
 }
 
-
-.form-container{
+.form-container {
   padding-right: 1em;
   margin-top: 3em;
 }
 
-.form-container input, button{
+.form-container input,
+button {
   background: #ebb8b8;
   flex: 1;
   padding: 0.8em;
   border: none;
   margin: 0.6em;
-
 }
