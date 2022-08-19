@@ -2,8 +2,8 @@ import React from 'react';
 import { Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import './App.css';
-import Bookstore from './pages/Bookstore';
-import Categories from './pages/Categories';
+import Bookstore from './Pages/Bookstore';
+import Categories from './Pages/Categories';
 
 function App() {
   return (
