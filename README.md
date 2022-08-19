@@ -2,6 +2,9 @@
 > A simple website to store your favorite books by category.<br> 
 > This is a Microverse project Created with React.js.
 
+<img width="1440" alt="Screen Shot 2022-08-19 at 5 51 27 AM" src="https://user-images.githubusercontent.com/53530780/185521675-7d76882b-2f19-46eb-845c-e4b849c7358c.png">
+
+
 ## Live Demo
 
 Can check the live demo [here]()
