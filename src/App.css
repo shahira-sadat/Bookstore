@@ -302,7 +302,7 @@ nav {
 }
 
 button:disabled {
-  color: #57a9f1;
+  color: #99bedf;
   cursor: not-allowed;
 }
 
