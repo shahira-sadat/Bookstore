@@ -1,7 +1,6 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 import { IoIosPerson } from 'react-icons/io';
-import './Navbar.css';
 
 function Navigation() {
   const links = [
@@ -16,7 +15,7 @@ function Navigation() {
       text: 'Categories',
     },
   ];
-    return (
+  return (
     <nav>
       <div className="navContainer">
         <h3 className="logo">Bookstore CMS</h3>

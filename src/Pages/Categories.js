@@ -1,7 +1,7 @@
 import React from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { checkStatus } from '../redux/categories/categories';
 import { IoConstructOutline } from 'react-icons/io5';
+import { checkStatus } from '../redux/categories/categories';
 
 function Categories() {
   const categories = useSelector((state) => state.categories);
