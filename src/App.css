@@ -303,7 +303,7 @@ nav {
 
 button:disabled {
   color: #57a9f1;
-  cursor: not-allowed; 
+  cursor: not-allowed;
 }
 
 .button-group {
