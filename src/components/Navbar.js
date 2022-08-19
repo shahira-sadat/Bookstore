@@ -1,23 +1,38 @@
-import { Link } from 'react-router-dom';
+import React from 'react';
+import { NavLink } from 'react-router-dom';
+import { IoIosPerson } from 'react-icons/io';
 
-function NavBar() {
+function Navigation() {
+  const links = [
+    {
+      id: 1,
+      path: '/',
+      text: 'Books',
+    },
+    {
+      id: 2,
+      path: '/categories',
+      text: 'Categories',
+    },
+  ];
   return (
-    <div className="header">
-      <div className="subheader">
-        <h1 className="header-title">Bookstore CMS</h1>
-        <nav className="nav">
-          <ul className="nav-ul">
-            <li className="nav-li">
-              <Link to="/" className="nav-link">Books</Link>
+    <nav>
+      <div className="navContainer">
+        <h3 className="logo">Bookstore CMS</h3>
+        <ul className="navLinks">
+          {links.map((link) => (
+            <li className="NavLink" key={link.id}>
+              <NavLink to={link.path}>
+                {link.text}
+              </NavLink>
             </li>
-            <li className="nav-li">
-              <Link to="/categories" className="nav-link">Categories</Link>
-            </li>
-          </ul>
-        </nav>
+          ))}
+        </ul>
+        <div className="profile-container">
+          <IoIosPerson className="profile-icon" />
+        </div>
       </div>
-    </div>
+    </nav>
   );
 }
-
-export default NavBar;
+export default Navigation;
