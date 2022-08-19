@@ -4,7 +4,6 @@ import { useDispatch } from 'react-redux';
 import { CircularProgress } from '@mui/material';
 import { removeBookFromApi } from '../redux/books/books';
 
-
 function CircularProgressWithLabel(props) {
   /* eslint-disable */
   return <CircularProgress variant="determinate" {...props} size={"80px"} />;
