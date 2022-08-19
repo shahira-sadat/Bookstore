@@ -1,6 +1,6 @@
 import React from 'react';
 import BookForm from '../components/BookForm';
-import BookList from '../components/BookList';
+import BookList from '../components/Booklist';
 
 function Books() {
   return (
