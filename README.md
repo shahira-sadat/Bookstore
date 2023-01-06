@@ -7,7 +7,7 @@
 
 ## Live Demo
 
-Can check the live demo [here](https://bookstore-shahir.herokuapp.com/)
+Can check the live demo [here](https://63b814cfc34c5640965174fd--sensational-mooncake-98c180.netlify.app/)
 
 
 
