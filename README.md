@@ -9,8 +9,6 @@
 
 Can check the live demo [here](https://63b814cfc34c5640965174fd--sensational-mooncake-98c180.netlify.app/)
 
-
-
 ## Built With
 
 - HTML/CSS
@@ -46,7 +44,6 @@ To get a local copy up and running follow these simple example steps.
 
 ### Deployment
     npm run deploy
-
 
 ## Authors
 👤 Shahira Sadat
